@@ -33,7 +33,7 @@
 
         <div class="divider"></div>
         <div class="flex justify-between txt-sm opacity-70">
-          <span>Total {{ totalTasks }}</span>
+          <span>{{ totalTasks }}</span>
           <span>{{ completedTasks }}</span>
         </div>
       </div>
@@ -59,10 +59,11 @@ const taks = ref([
 ])
 
 // Add a new task
-const addTask = () => {
+const addTask = (): void => {
   if (newTask.value.trim() === '') return
+
   taks.value.push({
-    id: Date.new(),
+    id: Date.now(),
     text: newTask.value,
     completed: false,
   })
@@ -70,11 +71,11 @@ const addTask = () => {
 }
 
 // Delete task
-const deleteTask = (id) => {
-  taks.value = taks.value.filter(task => task.id !== id)
+const deleteTask = (id: number) => {
+  taks.value = taks.value.filter((task) => task.id !== id)
 }
 
 // Statistics
-const totalTasks = computed(() => taks.value.length)
-const completedTasks = computed(() => taks.value.filter(t => t.completed).length)
+const totalTasks = ref('Total')
+const completedTasks = computed(() => taks.value.filter((t) => t.completed).length)
 </script>
