@@ -52,3 +52,5 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 ```bash
     npm run dev
 ```
+
+Abra o navegador no endereço indicado (geralmente http://localhost:5173).
