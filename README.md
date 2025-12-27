@@ -67,9 +67,9 @@ Abra o navegador no endereço indicado (geralmente ````http://localhost:5173````
 
 **Computed Properties**: Usamos computed para calcular automaticamente o total de tarefas e quantas estão prontas.
 
-### Como funciona a reatividade no Vue 3
+## Como funciona a reatividade no Vue 3
 
-**Próximos Passos**
+### Próximos Passos
 Esta é uma versão base. Para deixá-la "nível produção", você pode:
 - **LocalStorage**: Salvar as tarefas para que elas não sumam ao atualizar a página.
 - **Filtros**: Adicionar abas para ver "Todas", "Pendentes" e "Concluídas".
