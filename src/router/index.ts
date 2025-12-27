@@ -20,4 +20,14 @@ const router = createRouter({
   ],
 })
 
+declare module 'vue-router' {
+  interface RouteMeta {
+    title?: string
+  }
+}
+
+router.beforeEach((to) => {
+  document.title = to.meta?.title ?? 'To-Do List'
+})
+
 export default router
