@@ -29,28 +29,48 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
 ### Instalação
 
-1. Clone o repositório:
+1.Clone o repositório:
 
    ```bash
    git clone https://github.com/mr-cerebro/todoList-vuejs.git
    ```
 
-2. Entra na pasta do projecto:
+2.Entra na pasta do projecto:
 
 ```bash
     cd todoList-vuejs
 ```
 
-3. Instala as depedências
+3.Instala as depedências
 
 ```bash
     npm install
 ```
 
-4. Inicie o servidor de desenvolvimento:
+4.Inicie o servidor de desenvolvimento:
 
 ```bash
     npm run dev
 ```
 
 Abra o navegador no endereço indicado (geralmente ````http://localhost:5173````).
+
+**Principais recursos utilizados**:
+````v-model````: Faz a ligação bi-direcional entre o input de texto e a variável newTask, além de controlar o estado dos checkboxes.
+
+- **Classes do daisyUI:**
+
+    - ````card````, ````card-body````: Criam o container elegante.
+    - ````input-bordered````: Estiliza o campo de texto.
+    - ````btn-primary```` e ````btn-ghost````: Estilizam os botões com as cores do tema.
+    - ````checkbox-success````: Um checkbox que fica verde quando marcado.
+
+**Computed Properties**: Usamos computed para calcular automaticamente o total de tarefas e quantas estão prontas.
+
+### Como funciona a reatividade no Vue 3
+
+**Próximos Passos**
+Esta é uma versão base. Para deixá-la "nível produção", você pode:
+- **LocalStorage**: Salvar as tarefas para que elas não sumam ao atualizar a página.
+- **Filtros**: Adicionar abas para ver "Todas", "Pendentes" e "Concluídas".
+- **Temas**: O daisyUI permite trocar o tema (dark/light) apenas mudando um atributo no HTML.
