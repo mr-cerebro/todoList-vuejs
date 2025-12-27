@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-base-200 flex items-center justify center p-4">
+  <div class="min-h-screen bg-base-200 flex items-center justify-center p-4">
     <div class="card w-full max-w-md bg base-100 shadow-xl">
       <div class="card-body">
         <h2 class="card-title text-2l font-bold mt-4">To-Do List</h2>
