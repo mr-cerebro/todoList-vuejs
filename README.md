@@ -24,6 +24,7 @@ Uma lista de tarefas (To-Do List) moderna e responsiva construída com **Vue 3**
 ## 📦 Como rodar o projeto
 
 ### Pré-requisitos
+
 Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
 ### Instalação
@@ -31,3 +32,18 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 1. Clone o repositório:
    ```bash
    git clone https://github.com/mr-cerebro/todoList-vuejs
+   ```
+
+Entra na pasta do projecto:
+
+````bash
+    cd todoList-vuejs
+
+Instala as depedências
+```bash
+    npm install
+
+Inicie o servidor de desenvolvimento:
+```bash
+    npm run dev
+````
