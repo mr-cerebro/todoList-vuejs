@@ -44,19 +44,14 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-const newTask = ref('')
-const taks = ref([
-  {
-    id: 1,
-    text: 'Learn Vue 3',
-    completed: false,
-  },
-  {
-    id: 2,
-    text: 'Configure daisyUI',
-    completed: true,
-  },
-])
+interface Task {
+  id: number
+  text: string
+  completed: boolean
+}
+
+const newTask = ref<string>('')
+const taks = ref<Task[]>([])
 
 // Add a new task
 const addTask = (): void => {
