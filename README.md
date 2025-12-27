@@ -30,20 +30,25 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 ### Instalação
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/mr-cerebro/todoList-vuejs
    ```
 
-Entra na pasta do projecto:
+2. Entra na pasta do projecto:
 
-````bash
+```bash
     cd todoList-vuejs
+```
 
-Instala as depedências
+3. Instala as depedências
+
 ```bash
     npm install
+```
 
-Inicie o servidor de desenvolvimento:
+4. Inicie o servidor de desenvolvimento:
+
 ```bash
     npm run dev
-````
+```
